@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     "uploader",
     'bolanarede',
     "rest_framework",
+    "usuario",
 
 ]
 
@@ -108,3 +109,5 @@ else:
 
 
 print(MODE, MEDIA_URL, DATABASES)
+
+AUTH_USER_MODEL = "usuario.Usuario"

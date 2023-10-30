@@ -12,13 +12,12 @@ class Time(models.Model):
         verbose_name = "Time"
         verbose_name_plural = "Times"
 
-class Usuario(models.Model):
+class Teste(models.Model):
     Favorito = models.ForeignKey(
-        Time, on_delete=models.PROTECT, related_name="usuario"
+        Time, on_delete=models.PROTECT, related_name="teste"
     )
     def _str_(self):
         return f"{self.Favorito}"
-...
 
 class Camisa(models.Model):
     descricao = models.CharField(max_length=255)

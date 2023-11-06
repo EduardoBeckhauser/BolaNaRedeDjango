@@ -12,13 +12,6 @@ class Time(models.Model):
         verbose_name = "Time"
         verbose_name_plural = "Times"
 
-class Teste(models.Model):
-    Favorito = models.ForeignKey(
-        Time, on_delete=models.PROTECT, related_name="teste"
-    )
-    def _str_(self):
-        return f"{self.Favorito}"
-
 class Camisa(models.Model):
     descricao = models.CharField(max_length=255)
     quantidade = models.IntegerField(default=0,  null=True, blank=True)

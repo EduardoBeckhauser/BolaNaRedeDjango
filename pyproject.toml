@@ -6,7 +6,7 @@ authors = [
     {name = "Eduardo Beckhauser", email = "eduardololamorim235@gmail.com"},
 ]
 dependencies = [
-    "django>=4.2.6",
+    "django>=5.0",
     "djangorestframework>=3.14.0",
     "django-cors-headers>=4.2.0",
     "python-magic>=0.4.27",
@@ -33,3 +33,8 @@ dev = "python manage.py runserver 0.0.0.0:19003"
 [[tool.pdm.autoexport]]
 filename = "requirements.txt"
 without-hashes = "true"
+
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
+

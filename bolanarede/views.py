@@ -14,6 +14,6 @@ class CamisaViewSet(ModelViewSet):
     serializer_class = CamisaSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
     filterset_fields = ["time__nome"]
-    search_fields = ["nome"]
-    ordering_fields = ["nome", "preco"]
-    ordering = ["nome"]
+    # search_fields = ["nome"]
+    # ordering_fields = ["nome", "preco"]
+    # ordering = ["nome"]

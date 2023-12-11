@@ -84,8 +84,6 @@ else:
         }
     }
 
-print(MODE, DATABASES)
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -116,3 +114,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 FILE_UPLOAD_PERMISSIONS = 0o640
 
 AUTH_USER_MODEL = "usuario.Usuario"
+
+print(MODE, DATABASES)
